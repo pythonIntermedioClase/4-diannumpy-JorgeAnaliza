@@ -58,9 +58,15 @@ def describir_array(arr):
         Mínimo  : 0.0
         Máximo  : 3200000.0
     """
-    # TODO: imprime forma con arr.shape, tipo con arr.dtype,
+    #       imprime forma con arr.shape, tipo con arr.dtype,
     #       mínimo con arr.min() y máximo con arr.max()
-    pass
+
+    print(f" Forma: {arr.shape}")
+    print(f" Tipo: {arr.dtype}")
+    print(f" Mínimo: {arr.min()}")
+    print(f" Máximo: {arr.max()}")
+   
+
 
 
 def crear_array_declaraciones(valores_lista):
@@ -77,9 +83,9 @@ def crear_array_declaraciones(valores_lista):
         crear_array_declaraciones([1_000_000, 500_000, 2_000_000])
         -> array([1000000., 500000., 2000000.])
     """
-    # TODO: usa np.array con el parámetro dtype=np.float64
-    pass
-
+    # usa np.array con el parámetro dtype=np.float64
+    
+    return np.array(valores_lista, dtype=np.float64)
 
 def comparar_lista_vs_array(valores_lista):
     """
@@ -562,3 +568,4 @@ def calcular_sanciones_vectorizadas(valores, dias_mora):
     #    )
     # 3. Retorna valores * tasa
     pass
+   
